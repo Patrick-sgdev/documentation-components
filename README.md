@@ -65,6 +65,12 @@ When using the HTML field, the user may add content such as:
 <p>{{ $data->description }}</p>
 ````
 
+When trying to get access to a file use the helper `asset_path()`
+
+```html
+<img src="{{ asset_path($data->image) }}" alt="image" />
+````
+
 You may also use any blade code syntax inside of it:
 
 
